@@ -1,11 +1,9 @@
 .AboutMe {
-    background-image: url("./tile_background.png");
     width: 100%;
     height: fit-content;
 }
 
 #HeidiDescription {
-    background-color: #d8dde7;
     width: fit-content;
     height: fit-content;
 }

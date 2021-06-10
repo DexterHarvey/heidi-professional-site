@@ -1,0 +1,9 @@
+.imageHeader{
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#headerImage{
+    width: 100%;
+}

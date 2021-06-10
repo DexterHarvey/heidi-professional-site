@@ -1,0 +1,16 @@
+#navbarCustom {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    padding-top: 0rem;
+    top: 0;
+    z-index: 999;
+}
+
+#navbarCustom.active {
+    background: #8B9B39;
+}

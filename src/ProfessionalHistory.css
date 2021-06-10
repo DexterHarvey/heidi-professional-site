@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab'), url(./fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+.professionalHistory {
+    font-family: 'Roboto Slab';
+    background-color: #D7E2BA;
+    width: 100%;
+}

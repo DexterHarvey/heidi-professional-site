@@ -2,6 +2,7 @@
   "name": "heidi-professional-site",
   "version": "0.1.0",
   "private": true,
+  "plugins": ["@babel/plugin-proposal-class-properties"],
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
@@ -20,12 +21,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,6 +34,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
     "nodemon": "^2.0.7"
   }
 }

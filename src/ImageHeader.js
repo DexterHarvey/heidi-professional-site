@@ -1,5 +1,5 @@
 import { Image } from 'react-bootstrap';
-import heidiTrees from './heidiTrees.JPG';
+import heidiTrees from './heidiTrees.jpg';
 import './ImageHeader.css';
 
 function ImageHeader() {

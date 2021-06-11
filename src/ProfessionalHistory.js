@@ -3,9 +3,17 @@ import './ProfessionalHistory.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default class ProfessionalHistory extends Component {
+    componentDidUpdate(prevProps) {
+        console.log(prevProps);
+        console.log(this.props.height);
+        if(prevProps !== this.props.height) {
+            document.getElementById('profHistoryDiv').style.height = this.props.height;
+        }
+    }
+
     render() {
         return( 
-            <div className='professionalHistory'>
+            <div className='professionalHistory' id='profHistoryDiv'>
                 <Container className='align-items-center'>
                     <Row className='align-items-center'>
                         <Col md={4}>

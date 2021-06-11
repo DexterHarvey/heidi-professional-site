@@ -1,17 +1,30 @@
 import { Component } from 'react';
 import './AboutMe.css'
 import heidiHeadshot from './heidiHeadshot.jpg';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
 export default class AboutMe extends Component {
+    componentDidMount() {
+        this.getAboutDivHeight();
+    }
+
+    getAboutDivHeight = () => {
+        var height = window.getComputedStyle(document.getElementById('aboutDiv'), null).getPropertyValue('height');
+        console.log(height);
+        this.props.onGetAboutDivHeight(height);
+    }
     
     render() {
+        function logDivHeight() {
+            var height = window.getComputedStyle(document.getElementById('aboutDiv'), null).getPropertyValue('height');
+            console.log(height);
+        }
         return (
-            <div className='AboutMe'>
+            <div className='AboutMe' id='aboutDiv'>
                 <Container>
                     <Row className='align-items-center' id='AboutMeRow'>
                         <Col id='AboutMeColHeadshot'xs={12}md={5}>
-                            <Image src={heidiHeadshot} alt='' className='HeidiHeadshot' fluid roundedCircle/>
+                            <Image src={heidiHeadshot} alt='' className='HeidiHeadshot' id='HeidiHeadshot' fluid roundedCircle/>
                         </Col>
                         <Col id='AboutMeColDescription' xs={12} md={6}>
                             <div id='HeidiDescription'>
@@ -23,6 +36,7 @@ export default class AboutMe extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <Button id='heightButton' onClick={logDivHeight}>Height</Button>
             </div>
         )
     };

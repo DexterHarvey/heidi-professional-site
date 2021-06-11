@@ -26,7 +26,7 @@ export default class ProfessionalHistory extends Component {
                         </Col>
                         <Col md={4} id='academicWork'>
                             <h3 className='title'>Academic Work</h3><br />
-                            <h5>University of Calgary- Research Assistant under Gina Dimitroupolos (Present)</h5>
+                            <h5>University of Calgary- Research Assistant under Gina Dimitropoulos (Present)</h5>
                             <br />
                             <h5>Ryerson University  - MA Child and Youth Care</h5>
                             <h6>- Thesis: Exploring Transgender Youth's Experiences of Disordered Eating</h6>

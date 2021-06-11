@@ -18,38 +18,33 @@ export default class ProfessionalHistory extends Component {
                     <Row className='align-items-center'>
                         <Col md={4}>
                             <h3>Areas of Expertise</h3>
-                            <h6>I am a very important person, I own many 
-                                leather bound books on shelves of rich
-                                mahogony. Also, eating disorders.
-                            </h6>
+                            <h5>Diversity and inclusion practices</h5><br />
+                            <h5>Gender and sexuality</h5><br />
+                            <h5>LGBTQ2S+ advocacy</h5><br />
+                            <h5>Body neutrality, body image, disordered eating support</h5><br />
+                            <h5>Youth empowerment, leadership</h5>
                         </Col>
                         <Col md={4}>
-                            <h3>Work</h3>
-                            <h6>link to download of masters/other work? 
-                                Currently I 
-                                am working with Gina Fetagyropolis of the 
-                                University of Calgary on further CYC/eating
-                                disorder research
-                            </h6>
+                            <h3>Academic Work</h3>
+                            <h5>University of Calgary- Research Assistant under Gina Dimitroupolos (Present)</h5>
+                            <br />
+                            <h5>Ryerson University  - MA Child and Youth Care</h5>
+                            <h6>- Thesis: Exploring Transgender Youth's Experiences of Disordered Eating</h6>
+                            <h6>- The work of the thesis is currently ongoing in partnership with Dr. Julie James, Ryerson University</h6>
+                            <br />
+                            <h5>Dalhousie University - BA Gender and Women's Studies</h5>
                         </Col>
                         <Col md={4}>
-                            <h3>Education/Work History</h3>
-                            <h6>Dalhousie University - Major in GWS, Minor in 
-                                Sociology 
-                            </h6>
+                            <h3>Other Work</h3>
+                            <h5>Eating Disorder Support Network of Alberta (Present)</h5>
+                            <h6>- LGBTQ2S+ resource development </h6>
                             <br />
-                            <h6>Ryerson University  - Master's of Child and 
-                                Youth Care 
-                            </h6>
+                            <h5>National Eating Disorder Information Centre (2020)</h5>
+                            <h6>- LGBTQ2S+ resource development</h6>
                             <br />
-                            <h6>
-                                NEDIC - Volunteer work, developed resource
-                            </h6>
+                            <h5>South House Gender and Sexuality Centre (2018)</h5>
                             <br />
-                            <h6>
-                                U of C - Research Assistant to Gina 
-                                OliveTzatziki
-                            </h6>
+                            <h5>Lotus Women's Centre (2017-2018)</h5>
                         </Col>
                     </Row>
                 </Container>

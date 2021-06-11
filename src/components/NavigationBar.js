@@ -1,4 +1,4 @@
-import { NavbarBrand, Navbar, Nav, Image} from 'react-bootstrap';
+import { NavbarBrand, Navbar, Nav, Image, Container} from 'react-bootstrap';
 import { useState } from 'react';
 import '../styles/NavigationBar.scss';
 import signature from '../assets/signature.png';
@@ -20,18 +20,20 @@ function NavigationBar() {
 
     return (
         <div className='navbarDiv'>
-            <Navbar expand='md' fixed='top' className={navbar ? 'navbarCustom active' : 'navbarCustom'}>
-                <NavbarBrand href='/' id='navbarBrandSignature'>
-                    <Image src={signature} className='signature' />
-                </NavbarBrand>
-                <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-                <Navbar.Collapse>
-                    <Nav className='ml-auto'>
-                            <Nav.Link >About Me</Nav.Link>
-                            <Nav.Link >My Work</Nav.Link>
-                            <Nav.Link id='contactMe'>Contact Me</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+            <Navbar expand='md' fixed='top' className={navbar ? 'navbar active' : 'navbar'}>
+                <Container>
+                    <NavbarBrand href='/' id='navbarBrandSignature'>
+                        <img src={signature} alt='Heidi Signature' className='signature'/>
+                    </NavbarBrand>
+                    <Navbar.Toggle aria-controls='responsive-navbar-nav' />
+                    <Navbar.Collapse>
+                        <Nav className='ml-auto'>
+                                <Nav.Link href='#aboutDiv' >About Me</Nav.Link>
+                                <Nav.Link href='#profHistoryDiv'>My Work</Nav.Link>
+                                <Nav.Link href='#formHeight' id='contactMe'>Contact Me</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
            </Navbar>
         </div>
     );

@@ -1,41 +1,24 @@
-.navbarDiv {
-    font-size: 100%;
-}
-
-.navbar-brand {
-    font-family: 'Lora';
-    font-style: italic;
-    font-weight: bold;
-    font-size: 2em!important;
-}
-
 .signature {
     width: 100%;
     height: 100%
 }
 
-.navbarCustom {
+.navbar{
     background: #EDFBFE;
-    width: 100%;
     height: 85px;
     opacity: 0.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    transition: 0.5s;
 }
 
-.navbarCustom.active {
+.navbar.active {
     opacity: 0.97;
 }
 
 .nav-link {
     color: black !important;
     background: #EDFBFE;
-    font-family: 'Lora';
+    font-family: 'Roboto Slab';
     font-weight: bold;
     font-size: 1.5em;
     padding-right: 1rem!important;
@@ -45,8 +28,11 @@
 @media screen and (max-width: 600px) {
     .nav-link {
         border-bottom: 1px solid #B8B9CB;
-}
+    }
 
+    .signature {
+        width: 200px;
+    }
 }
 
 #contactMe {
@@ -54,5 +40,5 @@
 } 
 
 #navbarBrandSignature{
-    width: 300px;
+    width: 200px;
 }

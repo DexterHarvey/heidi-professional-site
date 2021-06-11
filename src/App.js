@@ -6,6 +6,7 @@ import NavigationBar from './components/NavigationBar';
 import ImageHeader from './components/ImageHeader';
 import EmailForm from './components/EmailForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AppFooter from './components/AppFooter';
 
 class App extends Component {
     state = { aboutDivHeight: ''}
@@ -23,6 +24,7 @@ class App extends Component {
                     <AboutMe onGetAboutDivHeight={this.resizeDivs}/>
                     <ProfessionalHistory height={this.state.aboutDivHeight}/>
                     <EmailForm />
+                    <AppFooter />
                 </header>
             </div>
         )

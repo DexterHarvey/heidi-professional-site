@@ -12,6 +12,20 @@ function EmailForm() {
                 <Container>
                     <Row>
                         <Col md={6}>
+                            <Form.Group controlId="emailFormFName">
+                                <Form.Label>First Name:</Form.Label>
+                                <Form.Control type="string" placeholder="Enter first name" />
+                            </Form.Group>
+                        </Col>
+                        <Col md={6}>
+                            <Form.Group controlId="emailFormLName">
+                                <Form.Label>Last Name:</Form.Label>
+                                <Form.Control type="string" placeholder="Enter last name" />
+                            </Form.Group>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={6}>
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Your Email</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" />
@@ -26,7 +40,7 @@ function EmailForm() {
                     </Row>
                     <Row>
                         <Col md={10}>
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                            <Form.Group controlId="emailFormTextArea" id='textArea'>
                                 <Form.Label>Content:</Form.Label>
                                 <Form.Control as="textarea" rows={5} />
                             </Form.Group>

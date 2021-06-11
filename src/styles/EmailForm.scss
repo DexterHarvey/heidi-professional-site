@@ -1,6 +1,6 @@
 .form {
     width: 100%;
-    font-family: 'Lora';
+    font-family: 'Roboto Slab';
 }
 
 .form-label {
@@ -10,4 +10,10 @@
 #colBtnSubmit {
     display: flex;
     align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    #textArea {
+        width: 550px;
+    }
 }

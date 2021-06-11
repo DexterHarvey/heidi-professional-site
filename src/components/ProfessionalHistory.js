@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import './ProfessionalHistory.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../styles/ProfessionalHistory.scss';
 
 export default class ProfessionalHistory extends Component {
     componentDidUpdate(prevProps) {

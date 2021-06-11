@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import './AboutMe.css'
-import heidiHeadshot from './heidiHeadshot.jpg';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import '../styles/AboutMe.scss';
+import heidiHeadshot from '../assets/heidiHeadshot.jpg';
 
 export default class AboutMe extends Component {
     componentDidMount() {

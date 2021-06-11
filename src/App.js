@@ -1,10 +1,10 @@
-import './App.css';
+import './styles/App.scss';
 import {Component} from 'react';
-import AboutMe from './AboutMe';
-import ProfessionalHistory from './ProfessionalHistory';
-import NavigationBar from './NavigationBar';
-import ImageHeader from './ImageHeader';
-import EmailForm from './EmailForm';
+import AboutMe from './components/AboutMe';
+import ProfessionalHistory from './components/ProfessionalHistory';
+import NavigationBar from './components/NavigationBar';
+import ImageHeader from './components/ImageHeader';
+import EmailForm from './components/EmailForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {

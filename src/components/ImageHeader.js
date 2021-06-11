@@ -1,6 +1,6 @@
 import { Image } from 'react-bootstrap';
-import heidiTrees from './heidiTrees.jpg';
-import './ImageHeader.css';
+import '../styles/ImageHeader.scss';
+import heidiTrees from '../assets/heidiTrees.jpg';
 
 function ImageHeader() {
     return (

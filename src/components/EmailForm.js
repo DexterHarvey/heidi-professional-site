@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
-import './EmailForm.scss';
+import '../styles/EmailForm.scss';
 
 function EmailForm() {
     useEffect(() => {

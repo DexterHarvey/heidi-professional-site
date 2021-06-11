@@ -1,7 +1,7 @@
-import './NavigationBar.scss';
 import { NavbarBrand, Navbar, Nav, Image} from 'react-bootstrap';
-import React, { useState } from 'react';
-import signature from './signature.png';
+import { useState } from 'react';
+import '../styles/NavigationBar.scss';
+import signature from '../assets/signature.png';
 
 function NavigationBar() {
     // eslint-disable-next-line no-undef

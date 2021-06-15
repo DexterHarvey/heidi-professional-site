@@ -9,20 +9,31 @@ function EmailForm() {
     var txtEmailAddress = document.getElementById('txtEmail');
     var txtPhone = document.getElementById('txtPhone');
     var txtContent = document.getElementById('txtContent');
-    axios.defaults.baseURL = 'https://16t26jt140.execute-api.us-west-2.amazonaws.com/';
-    axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-    axios.defaults.headers.post['Origin'] = 'https://heidivandersteen.ca'
-
 
     useEffect(() => {
     })
 
     const postForm = () => {
         var custJSONString = {"name":(txtFName.value + " " + txtLName.value), "email":txtEmailAddress.value, "phone":txtPhone.value, "message":txtContent.value};
+        // const params = new URLSearchParams();
+        // params.append('name', (txtFName.value + ' ' + txtLName.value));
+        // params.append('email', txtEmailAddress.value);
+        // params.append('phone', txtPhone.value);
+        // params.append('message', txtContent.value);
+
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+
         try{
-            axios.post('/live', custJSONString)
+            axios.post('https://16t26jt140.execute-api.us-west-2.amazonaws.com/live', custJSONString, config)
             .then((response) => {
                 console.log(response);
+            })
+            .catch((err) => {
+                console.log(err);
             })
         }
         catch(e)

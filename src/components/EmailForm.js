@@ -9,7 +9,9 @@ function EmailForm() {
     var txtEmailAddress = document.getElementById('txtEmail');
     var txtPhone = document.getElementById('txtPhone');
     var txtContent = document.getElementById('txtContent');
-    const apiURL = 'https://16t26jt140.execute-api.us-west-2.amazonaws.com/live';
+    axios.defaults.baseURL = 'https://16t26jt140.execute-api.us-west-2.amazonaws.com/';
+    axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+    axios.defaults.headers.post['Origin'] = 'https://heidivandersteen.ca'
 
 
     useEffect(() => {
@@ -18,7 +20,7 @@ function EmailForm() {
     const postForm = () => {
         var custJSONString = {"name":(txtFName.value + " " + txtLName.value), "email":txtEmailAddress.value, "phone":txtPhone.value, "message":txtContent.value};
         try{
-            axios.post(apiURL, custJSONString)
+            axios.post('/live', custJSONString)
             .then((response) => {
                 console.log(response);
             })
@@ -36,13 +38,13 @@ function EmailForm() {
                 <Container>
                     <Row>
                         <Col md={6}>
-                            <Form.Group controlId="name">
+                            <Form.Group>
                                 <Form.Label>First Name:</Form.Label>
                                 <Form.Control type="string" placeholder="Enter first name" id='txtFName' />
                             </Form.Group>
                         </Col>
                         <Col md={6}>
-                            <Form.Group controlId="emailFormLName">
+                            <Form.Group>
                                 <Form.Label>Last Name:</Form.Label>
                                 <Form.Control type="string" placeholder="Enter last name" id='txtLName' />
                             </Form.Group>
@@ -50,13 +52,13 @@ function EmailForm() {
                     </Row>
                     <Row>
                         <Col md={6}>
-                            <Form.Group controlId="email">
+                            <Form.Group>
                                 <Form.Label>Your Email</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" id='txtEmail'/>
                             </Form.Group>
                         </Col>
                         <Col md={6}>
-                            <Form.Group controlId="phone">
+                            <Form.Group>
                                 <Form.Label>Your Phone</Form.Label>
                                 <Form.Control type="string" placeholder="Enter phone number (optional)" id='txtPhone'/>
                             </Form.Group>
@@ -64,7 +66,7 @@ function EmailForm() {
                     </Row>
                     <Row>
                         <Col md={10}>
-                            <Form.Group controlId="message" id='textArea'>
+                            <Form.Group>
                                 <Form.Label>Content:</Form.Label>
                                 <Form.Control as="textarea" rows={5} id='txtContent'/>
                             </Form.Group>

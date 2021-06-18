@@ -22,9 +22,7 @@ function NavigationBar() {
         <div className='navbarDiv'>
             <Navbar expand='md' fixed='top' className={navbar ? 'navbar active' : 'navbar'}>
                 <Container>
-                    <NavbarBrand href='/' id='navbarBrandSignature'>
-                        <img src={signature} alt='Heidi Signature' className='signature'/>
-                    </NavbarBrand>
+                    <NavbarBrand href='/' id='navbarBrandSignature'>Heidi Vander Steen</NavbarBrand>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse>
                         <Nav className='ml-auto'>

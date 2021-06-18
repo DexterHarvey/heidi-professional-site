@@ -75,7 +75,7 @@ function EmailForm() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={10}>
+                        <Col md={12}>
                             <Form.Group>
                                 <Form.Label>Content:</Form.Label>
                                 <Form.Control as="textarea" rows={5} id='txtContent'/>

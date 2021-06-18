@@ -44,7 +44,6 @@ function EmailForm() {
 
     return (
         <div id='formHeight'>
-            <p id='test'>Testing testing</p>
             <Form className='form' method='post' action='https://16t26jt140.execute-api.us-west-2.amazonaws.com/live'>
                 <Container>
                     <Row>

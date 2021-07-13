@@ -22,20 +22,28 @@ function EmailForm() {
                 'Content-Type': 'application/json'
             }
         }
-        try{
-            axios.post('https://16t26jt140.execute-api.us-west-2.amazonaws.com/live', custJSONString, config)
-            .then((response) => {
-                console.log(response);
-                emailForm.reset();
-                window.alert("Email sent successfully");
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+
+        if(txtFName.value != "" && txtLName.value != "" && txtEmailAddress.value != "" && txtContent.value != "") {
+            try{
+                axios.post('https://16t26jt140.execute-api.us-west-2.amazonaws.com/live', custJSONString, config)
+                .then((response) => {
+                    console.log(response);
+                    emailForm.reset();
+                    window.alert("Email sent successfully");
+                })
+                .catch((err) => {
+                    console.log(err);
+                    window.alert("An error occured when sending your message. Please try again.");
+                })
+            }
+            catch(e)
+            {
+                console.log(e);
+                window.alert("An error occured when sending your message. Please try again.");
+            }
         }
-        catch(e)
-        {
-            console.log(e);
+        else {
+            window.alert("Please enter all required fields (First Name, Last Name, Email, and Content).");
         }
     }
 

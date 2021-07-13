@@ -9,6 +9,7 @@ function EmailForm() {
     var txtEmailAddress = document.getElementById('txtEmail');
     var txtPhone = document.getElementById('txtPhone');
     var txtContent = document.getElementById('txtContent');
+    var emailForm = document.getElementsByClassName('form');
 
     useEffect(() => {
     })
@@ -31,11 +32,7 @@ function EmailForm() {
             axios.post('https://16t26jt140.execute-api.us-west-2.amazonaws.com/live', custJSONString, config)
             .then((response) => {
                 console.log(response);
-                txtContent.innerText = "";
-                txtEmailAddress.innerText = "";
-                txtFName.innerText = "";
-                txtLName.innerText = "";
-                txtPhone.innerText = "";
+                emailForm.reset();
                 window.alert("Email sent successfully");
             })
             .catch((err) => {

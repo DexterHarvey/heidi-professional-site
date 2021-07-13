@@ -22,7 +22,6 @@ function EmailForm() {
                 'Content-Type': 'application/json'
             }
         }
-
         try{
             axios.post('https://16t26jt140.execute-api.us-west-2.amazonaws.com/live', custJSONString, config)
             .then((response) => {
@@ -42,7 +41,7 @@ function EmailForm() {
 
     return (
         <div id='formHeight'>
-            <Form className='form' method='post' action='https://16t26jt140.execute-api.us-west-2.amazonaws.com/live'>
+            <Form className='form'>
                 <Container>
                     <Row>
                         <Col md={6}>

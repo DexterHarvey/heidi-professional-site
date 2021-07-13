@@ -9,7 +9,7 @@ function EmailForm() {
     var txtEmailAddress = document.getElementById('txtEmail');
     var txtPhone = document.getElementById('txtPhone');
     var txtContent = document.getElementById('txtContent');
-    var emailForm = document.getElementsByClassName('form');
+    var emailForm = document.getElementsByClassName('form')[0];
 
     useEffect(() => {
     })

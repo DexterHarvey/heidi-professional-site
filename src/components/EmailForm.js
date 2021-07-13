@@ -16,11 +16,6 @@ function EmailForm() {
 
     const postForm = () => {
         var custJSONString = {"name":(txtFName.value + " " + txtLName.value), "email":txtEmailAddress.value, "phone":txtPhone.value, "message":txtContent.value};
-        // const params = new URLSearchParams();
-        // params.append('name', (txtFName.value + ' ' + txtLName.value));
-        // params.append('email', txtEmailAddress.value);
-        // params.append('phone', txtPhone.value);
-        // params.append('message', txtContent.value);
 
         const config = {
             headers: {
@@ -53,13 +48,13 @@ function EmailForm() {
                         <Col md={6}>
                             <Form.Group>
                                 <Form.Label>First Name:</Form.Label>
-                                <Form.Control type="string" placeholder="Enter first name" id='txtFName' />
+                                <Form.Control type="string" placeholder="Enter first name" id='txtFName' required/>
                             </Form.Group>
                         </Col>
                         <Col md={6}>
                             <Form.Group>
                                 <Form.Label>Last Name:</Form.Label>
-                                <Form.Control type="string" placeholder="Enter last name" id='txtLName' />
+                                <Form.Control type="string" placeholder="Enter last name" id='txtLName' required/>
                             </Form.Group>
                         </Col>
                     </Row>
@@ -67,7 +62,7 @@ function EmailForm() {
                         <Col md={6}>
                             <Form.Group>
                                 <Form.Label>Your Email</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" id='txtEmail'/>
+                                <Form.Control type="email" placeholder="Enter email" id='txtEmail'required/>
                             </Form.Group>
                         </Col>
                         <Col md={6}>
@@ -81,7 +76,7 @@ function EmailForm() {
                         <Col md={12}>
                             <Form.Group>
                                 <Form.Label>Content:</Form.Label>
-                                <Form.Control as="textarea" rows={5} id='txtContent'/>
+                                <Form.Control as="textarea" rows={5} id='txtContent' required/>
                             </Form.Group>
                         </Col>
                     </Row>

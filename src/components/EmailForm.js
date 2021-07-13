@@ -10,7 +10,6 @@ function EmailForm() {
     var txtPhone = document.getElementById('txtPhone');
     var txtContent = document.getElementById('txtContent');
     var emailForm = document.getElementsByClassName('form')[0];
-    const [validated, setValidated] = useState(false);
 
     useEffect(() => {
     })
@@ -42,7 +41,7 @@ function EmailForm() {
 
     return (
         <div id='formHeight'>
-            <Form className='form' noValidate >
+            <Form className='form' noValidate onSubmit={postForm}>
                 <Container>
                     <Row>
                         <Col md={6}>
@@ -82,7 +81,7 @@ function EmailForm() {
                     </Row>
                     <Row id='btnRow'>
                         <Col md={12} id='colBtnSubmit'>
-                            <Button variant="primary" onClick={postForm} id='btnSubmit'>
+                            <Button variant="primary" type="submit" id='btnSubmit'>
                                 Submit
                             </Button>
                         </Col>

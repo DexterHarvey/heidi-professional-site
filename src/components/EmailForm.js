@@ -31,6 +31,12 @@ function EmailForm() {
             axios.post('https://16t26jt140.execute-api.us-west-2.amazonaws.com/live', custJSONString, config)
             .then((response) => {
                 console.log(response);
+                txtContent.innerHTML = "";
+                txtEmailAddress.innerHTML = "";
+                txtFName.innerHTML = "";
+                txtLName.innerHTML = "";
+                txtPhone.innerHTML = "";
+                window.alert("Email sent successfully");
             })
             .catch((err) => {
                 console.log(err);

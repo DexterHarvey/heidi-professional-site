@@ -41,7 +41,7 @@ function EmailForm() {
 
     return (
         <div id='formHeight'>
-            <Form className='form' noValidate onSubmit={postForm}>
+            <Form className='form'>
                 <Container>
                     <Row>
                         <Col md={6}>
@@ -81,7 +81,7 @@ function EmailForm() {
                     </Row>
                     <Row id='btnRow'>
                         <Col md={12} id='colBtnSubmit'>
-                            <Button variant="primary" type="submit" id='btnSubmit'>
+                            <Button variant="primary" onClick={postForm} id='btnSubmit'>
                                 Submit
                             </Button>
                         </Col>

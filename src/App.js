@@ -9,11 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppFooter from './components/AppFooter';
 
 class App extends Component {
-    state = { aboutDivHeight: ''}
-
-    resizeDivs = (height) => { 
-        this.setState({aboutDivHeight: height});
-    }
 
     render() {
         return (
@@ -21,8 +16,8 @@ class App extends Component {
                 <header className="App-header">
                     <NavigationBar />
                     <ImageHeader />
-                    <AboutMe onGetAboutDivHeight={this.resizeDivs}/>
-                    <ProfessionalHistory height={this.state.aboutDivHeight}/>
+                    <AboutMe/>
+                    <ProfessionalHistory/>
                     <EmailForm />
                     <AppFooter />
                 </header>

@@ -4,16 +4,6 @@ import '../styles/AboutMe.scss';
 import heidiHeadshot from '../assets/heidiHeadshot.jpg';
 
 function AboutMe() {
-
-    useEffect(() => {
-        this.getAboutDivHeight();
-    });
-
-    getAboutDivHeight = () => {
-        var height = window.getComputedStyle(document.getElementById('aboutDiv'), null).getPropertyValue('height');
-        console.log(height);
-        this.props.onGetAboutDivHeight(height);
-    }
     
     return (
         <div className='AboutMe' id='aboutDiv'>

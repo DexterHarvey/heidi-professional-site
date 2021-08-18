@@ -10,9 +10,8 @@ function AppFooter() {
                     <NavbarBrand>Heidi Vander Steen</NavbarBrand>
                     <Navbar.Collapse>
                         <Nav className='ml-auto'>
-                            <h6>Website by Dexter Harvey</h6>
-                            <br/>
-                            <h6>DexterHarvey.github.io</h6>
+                            <h6>Website by Dexter Harvey @ </h6>
+                            <a href='DexterHarvey.github.io'>DexterHarvey.github.io</a>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

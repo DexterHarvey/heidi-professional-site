@@ -12,6 +12,7 @@ class AppFooter extends Component{
                         <Navbar.Collapse>
                             <Nav className='ml-auto'>
                                 <h6>Website by Dexter Harvey</h6>
+                                <h6>DexterHarvey.github.io</h6>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

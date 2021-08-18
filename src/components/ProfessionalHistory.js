@@ -3,13 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import '../styles/ProfessionalHistory.scss';
 
 export default class ProfessionalHistory extends Component {
-    // componentDidUpdate(prevProps) {
-    //     console.log(prevProps);
-    //     console.log(this.props.height);
-    //     if(prevProps !== this.props.height) {
-    //         document.getElementById('profHistoryDiv').style.height = this.props.height;
-    //     }
-    // }
 
     render() {
         return( 

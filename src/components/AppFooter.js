@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import { Navbar, Container, NavbarBrand, Nav } from 'react-bootstrap';
 import '../styles/AppFooter.scss';
 

@@ -1,4 +1,4 @@
-import { useEffect, ReactDOM} from 'react';
+import { useEffect } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import axios from 'axios';
 import '../styles/EmailForm.scss';
